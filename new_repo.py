@@ -25,8 +25,7 @@ def main(argv):
         os.system('git commit -m "Initial commit, creation of basic README."')
         os.system('git remote add origin https://github.com/' + argv[1] + '/' + folderName)
         os.system('git push -u origin master')
-        os.system(argv[1])
-        os.system(argv[2])
+        print('Successfully created repository for ' + projName + ' at ' + folderName + '.')
     os.chdir(startPath)
 
 if __name__ == '__main__':
